@@ -28,7 +28,13 @@ const TodosTabel = ({ todos }: { todos: ITodo[] }) => {
         {todos.map((todo) => (
           <TableRow key={todo.id}>
             <TableCell className="font-medium">{todo.title}</TableCell>
-            <TableCell>{todo.body}</TableCell>
+            <TableCell>
+              {todo.body?.trim() || (
+                <span className="text-muted-foreground italic">
+                  No description
+                </span>
+              )}
+            </TableCell>
             <TableCell>
               {todo.completed ? (
                 <Badge className="p-3 flex justify-center items-center">
