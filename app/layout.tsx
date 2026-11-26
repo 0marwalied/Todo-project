@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Todo App",
-  description: "Add your apps easy and fast",
+  description: "Add your tasks easy and fast",
 };
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {
