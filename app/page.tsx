@@ -10,7 +10,7 @@ async function Todos() {
   await auth.protect();
   const todos = await getTodos();
   return (
-    <div className="flex flex-col gap-10 lg:w-5xl md:w-3xl w-full">
+    <div className="flex flex-col gap-10 lg:w-5xl md:w-3xl w-full py-4">
       <div className="self-end">
         <AddTodoForm />
       </div>
